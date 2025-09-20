@@ -1,12 +1,9 @@
-// In: Backend/service.js
-
 const axios = require('axios');
 require('dotenv').config();
 
 const REGISTER_URL = 'http://20.244.56.144/evaluation-service/register';
 const AUTH_URL = 'http://20.244.56.144/evaluation-service/auth';
 
-// --- IMPORTANT: Fill in your actual details here ---
 const MY_DETAILS = {
   name: "Udyan Gupta",
   email: "1000018787@dit.edu.in",
@@ -47,5 +44,4 @@ async function getAuthToken() {
     process.exit(1);
   }
 }
-
 module.exports = { getAuthToken };
