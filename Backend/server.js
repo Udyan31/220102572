@@ -1,9 +1,6 @@
-// In: Backend/server.js
-
 const express = require('express');
 const { getAuthToken } = require('./service.js');
 
-// Correct relative path to go one level up, then into 'Logging Middleware'
 const { log } = require('../Logging Middleware/logger.js');
 
 const app = express();
@@ -43,5 +40,6 @@ const startServer = async () => {
     console.error("Server could not start. Authentication failed.");
   }
 };
+
 
 startServer();
